@@ -345,3 +345,80 @@ select:focus {
     font-size: 2rem;
     color: #ffffff;
 }
+
+/* Ajustes para Celular (Telas até 768px) */
+@media (max-width: 768px) {
+    /* Centraliza o cabeçalho e menu */
+    .header-minimalista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-minimalista nav {
+        display: flex;
+        flex-direction: column; /* Links um embaixo do outro no celular */
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    /* Centraliza a frase de impacto */
+    .hero-frase {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-frase h1 {
+        font-size: 2rem; /* Diminui o título para caber no celular */
+    }
+
+    /* Ajusta o grid para 1 bolo por fileira centralizado */
+    .grid-bolos {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os cards */
+        gap: 20px;
+    }
+
+    .card-bolo {
+        width: 90%; /* Ocupa quase a largura toda da tela */
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Centraliza o formulário de encomenda */
+    #pedido-bolo {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #form-bolo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #form-bolo input, 
+    #form-bolo select, 
+    #form-bolo textarea {
+        width: 100%; /* Ocupa a largura total disponível */
+        max-width: 100%;
+        box-sizing: border-box; /* Evita que o campo saia da tela */
+    }
+
+    /* Centraliza o modal no celular */
+    .modal-corpo {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #modal-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
