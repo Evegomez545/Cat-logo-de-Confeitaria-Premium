@@ -358,9 +358,16 @@ select:focus {
 
     .header-minimalista nav {
         display: flex;
-        flex-direction: column; /* Links um embaixo do outro no celular */
-        gap: 10px;
-        margin-top: 15px;
+        flex-direction: row; /* Alinha na horizontal */
+        justify-content: center; /* Centraliza o grupo no meio */
+        gap: 12px; /* Espaço reduzido para caber lado a lado */
+        margin-top: 10px;
+        flex-wrap: nowrap; /* Impede que eles pulem linha */
+    }
+    .header-minimalista nav a {
+        font-size: 0.75rem; /* Letra um pouco menor para garantir o espaço */
+        margin: 0; /* Remove margens laterais fixas */
+        letter-spacing: 1px;
     }
 
     /* Centraliza a frase de impacto */
@@ -370,22 +377,31 @@ select:focus {
     }
 
     .hero-frase h1 {
-        font-size: 2rem; /* Diminui o título para caber no celular */
+        font-size: 1.8rem;
+        line-height: 1.2;/* Diminui o título para caber no celular */
     }
 
     /* Ajusta o grid para 1 bolo por fileira centralizado */
-    .grid-bolos {
+    .grid-bolos {  
         display: flex;
-        flex-direction: column;
-        align-items: center; /* Centraliza os cards */
-        gap: 20px;
+        flex-wrap: wrap; /* Permite quebrar a linha */
+        flex-direction: row; /* Garante que fiquem lado a lado */
+        justify-content: center;
+        gap: 15px; /* Espaço menor entre os bolos no celular */
+        padding: 10px;
     }
 
     .card-bolo {
-        width: 90%; /* Ocupa quase a largura toda da tela */
-        max-width: 350px;
-        margin: 0 auto;
+        /* Calcula 50% da largura menos o espaço do gap */
+        flex: 0 1 calc(50% - 20px); 
+        min-width: 140px; /* Largura mínima para não achatar */
+        padding: 10px;
         text-align: center;
+    }
+
+
+    .card-bolo h3 {
+        font-size: 0.9rem;
     }
 
     /* Centraliza o formulário de encomenda */
@@ -421,4 +437,10 @@ select:focus {
         height: auto;
         margin-bottom: 20px;
     }
+    .preco {
+        font-size: 0.85rem;
+    }
+
 }
+
+
