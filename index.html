@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <header class="header-minimalista">
+        <nav>
+            <a href="#catalogo">Bolos</a>
+            <a href="#pedido-bolo">Encomendas</a>
+            <a href="https://wa.me/5521999999999" target="_blank">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero-frase">
+        <h1>Doces Momentos, Sabores Inesquecíveis.</h1>
+        <p>Bolos artesanais feitos com amor para celebrar suas melhores histórias.</p>
+    </section>
+
+    <section id="catalogo" class="container">
+        <h2 class="titulo-secao">Nossos Bolos Famosos</h2>
+        <div class="grid-bolos">
+
+            <div class="grid-bolos">
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Ninho com Nutella', 85, 'img/ninho-nutella.jpeg', 'O queridinho da casa, macio e irresistível.')">
+                    <img src="img/ninho-nutella.jpeg" alt="Bolo Ninho com Nutella">
+                    <h3>Ninho com Nutella</h3>
+                    <p>O queridinho da casa, macio e irresistível.</p>
+                    <span class="preco">R$ 85,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Chocolate Intenso', 90, 'img/chocolate.jpeg', 'Para os amantes de um verdadeiro clássico, rico e cremoso.')">
+                    <img src="img/chocolate.jpeg" alt="Bolo de Chocolate">
+                    <h3>Chocolate Intenso</h3>
+                    <p>Para os amantes de um verdadeiro clássico</p>
+                    <span class="preco">R$ 90,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Morango Refrescante', 75, 'img/morango.jpeg', 'Leveza e frescor com pedaços suculentos de morango.')">
+                    <img src="img/morango.jpeg" alt="Bolo de Morango">
+                    <h3>Morango Refrescante</h3>
+                    <p>Leveza e frescor com pedaços suculentos de morango.</p>
+                    <span class="preco">R$ 75,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Cenoura com Brigadeiro', 80, 'img/cenoura-chocolate.jpeg', 'A combinação perfeita do bolo fofinho com a doçura do brigadeiro.')">
+                    <img src="img/cenoura-chocolate.jpeg" alt="Bolo Cenoura com Brigadeiro">
+                    <h3>Cenoura com Brigadeiro</h3>
+                    <p>A combinação perfeita do bolo fofinho.</p>
+                    <span class="preco">R$ 80,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Pistache e Frutas Vermelhas', 110, 'img/pistache.jpeg', 'Elegância e sabor marcante para paladares refinados.')">
+                    <img src="img/pistache.jpeg" alt="Bolo Pistache com Frutas Vermelhas">
+                    <h3>Pistache e Frutas Vermelhas</h3>
+                    <p>Elegância e sabor marcante para paladares refinados.</p>
+                    <span class="preco">R$ 110,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Doce de Leite com Nozes', 95, 'img/doce-leite.jpeg', 'A riqueza do doce de leite combinada com o crocante das nozes.')">
+                    <img src="img/doce-leite.jpeg" alt="Bolo Doce de Leite com Nozes">
+                    <h3>Doce de Leite com Nozes</h3>
+                    <p>A riqueza do doce de leite combinada com o crocante das nozes.</p>
+                    <span class="preco">R$ 95,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Churros Delicioso', 78, 'img/churros.jpg', 'O sabor da feira reinventado em uma experiência única.')">
+                    <img src="img/churros.jpg" alt="Bolo de Churros">
+                    <h3>Churros Delicioso</h3>
+                    <p>O sabor da feira reinventado em uma experiência única.</p>
+                    <span class="preco">R$ 78,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('KitKat Divertido', 105, 'img/kitkat.jpeg', 'Uma explosão de chocolate com a crocância do seu chocolate favorito.')">
+                    <img src="img/kitkat.jpeg" alt="Bolo KitKat">
+                    <h3>KitKat Divertido</h3>
+                    <p>Uma explosão de chocolate com a crocância do seu chocolate favorito.</p>
+                    <span class="preco">R$ 105,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Oreo Cream', 92, 'img/oreo.jpeg', 'Cremoso e com pedaços do biscoito mais amado do mundo.')">
+                    <img src="img/oreo.jpeg" alt="Bolo Oreo Cream">
+                    <h3>Oreo Cream</h3>
+                    <p>Cremoso e com pedaços do biscoito mais amado do mundo.</p>
+                    <span class="preco">R$ 92,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Kinder Bueno Exclusivo', 115, 'img/kinder.jpeg', 'A cremosidade e o sabor inconfundível do chocolate Kinder.')">
+                    <img src="img/kinder.jpeg" alt="Bolo Kinder Bueno">
+                    <h3>Kinder Bueno Exclusivo</h3>
+                    <p>A cremosidade e o sabor inconfundível do chocolate Kinder.</p>
+                    <span class="preco">R$ 115,00</span>
+                </div>
+
+                <div class="card-bolo glass"
+                    onclick="abrirModal('Beijinho Gourmet', 88, 'img/beijinho.jpeg', 'O clássico sabor brasileiro em sua versão mais elegante.')">
+                    <img src="img/beijinho.jpeg" alt="Bolo Beijinho Gourmet">
+                    <h3>Beijinho Gourmet</h3>
+                    <p>O clássico sabor brasileiro em sua versão mais elegante.</p>
+                    <span class="preco">R$ 88,00</span>
+                </div>
+            </div>
+
+            <div id="modal-bolo" class="modal">
+                <div class="modal-content glass">
+                    <span class="close" onclick="fecharModal()">&times;</span>
+                    <div class="modal-corpo">
+                        <img id="modal-img" src="" alt="Bolo Grande">
+                        <div class="modal-info">
+                            <h2 id="modal-titulo">Sabor do Bolo</h2>
+                            <p id="modal-descricao">Descrição detalhada do bolo aqui.</p>
+
+                            <label>Escolha o Tamanho:</label>
+                            <select id="modal-tamanho" onchange="atualizarPrecoModal()">
+                                <option value="P (15cm)" data-multiplicador="1">P (15cm) - 8 a 10 fatias</option>
+                                <option value="M (20cm)" data-multiplicador="1.5">M (20cm) - 15 a 20 fatias</option>
+                                <option value="G (25cm)" data-multiplicador="2">G (25cm) - 25 a 30 fatias</option>
+                            </select>
+
+                            <p class="preco-destaque">Preço: <span id="modal-preco">R$ 0,00</span></p>
+                            <button class="btn-comprar" onclick="enviarPedidoModal()">Pedir agora no WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pedido-bolo">
+        <h2>Faça sua Encomenda</h2>
+        <form id="form-bolo">
+            <label>Escolha o Bolo:</label>
+            <select id="sabor" onchange="atualizarPreco()">
+                <option value="Chocolate" data-preco="90">Chocolate Intenso</option>
+                <option value="Morango" data-preco="75">Morango Refrescante</option>
+                <option value="Ninho com Nutella" data-preco="85">Ninho com Nutella</option>
+                <option value="Cenoura" data-preco="80">Cenoura com Brigadeiro</option>
+                <option value="Pistache" data-preco="110">Pistache e Frutas Vermelhas</option>
+                <option value="doce-leite" data-preco="95">Doce de Leite com Nozes</option>
+                <option value="Beijinho" data-preco="88">Beijinho Gourmet</option>
+                <option value="KitKat" data-preco="105">KitKat Divertido</option>
+                <option value="Oreo" data-preco="92">Oreo Cream</option>
+                <option value="churros" data-preco="78">Churros Delicioso</option>
+                <option value="kinder" data-preco="115">Kinder Bueno Exclusivo</option>
+            </select>
+
+            <label>Tamanho do Bolo:</label>
+            <select id="tamanho" onchange="atualizarPreco()">
+                <option value="P (15cm)" data-multiplicador="1">P (15cm) - 8 a 10 fatias</option>
+                <option value="M (20cm)" data-multiplicador="1.5">M (20cm) - 15 a 20 fatias</option>
+                <option value="G (25cm)" data-multiplicador="2">G (25cm) - 25 a 30 fatias</option>
+            </select>
+
+            <p style="font-weight: bold; margin-top: 10px;">
+                Preço Estimado: <span id="preco-total">R$ 85,00</span>
+            </p>
+
+
+
+            <label>Data da Entrega:</label>
+            <input type="date" id="data-entrega">
+
+            <label>Observações (Ex: Nome para o topo):</label>
+            <textarea id="obs" placeholder="Escreva aqui..."></textarea>
+
+            <button type="button" onclick="enviarPedido()">Enviar Pedido no Whatsapp</button>
+        </form>
+    </section>
+
+
+    <script>
+        // Variável para controlar o preço do bolo aberto na foto grande
+        let precoBaseAtual = 0;
+
+        // --- NOVA FUNÇÃO: ABRE A FOTO GRANDE ---
+        function abrirModal(nome, preco, imagem, desc) {
+            document.getElementById('modal-titulo').innerText = nome;
+            document.getElementById('modal-img').src = imagem;
+            document.getElementById('modal-descricao').innerText = desc;
+            precoBaseAtual = preco;
+
+            document.getElementById('modal-bolo').style.display = "block";
+            atualizarPrecoModal(); // Calcula o preço inicial no modal
+        }
+
+        function fecharModal() {
+            document.getElementById('modal-bolo').style.display = "none";
+        }
+
+        function atualizarPrecoModal() {
+            const selectTamanho = document.getElementById('modal-tamanho');
+            const multiplicador = parseFloat(selectTamanho.options[selectTamanho.selectedIndex].dataset.multiplicador);
+            const total = precoBaseAtual * multiplicador;
+            document.getElementById('modal-preco').innerText = `R$ ${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        function enviarPedidoModal() {
+            const sabor = document.getElementById('modal-titulo').innerText;
+            const tamanho = document.getElementById('modal-tamanho').value;
+            const preco = document.getElementById('modal-preco').innerText;
+            const fone = "5521999999999";
+            const texto = `Olá! Quero o bolo *${sabor}* (${tamanho}) por ${preco}`;
+            window.open(`https://wa.me/${fone}?text=${encodeURIComponent(texto)}`);
+        }
+
+        // --- SUAS FUNÇÕES ORIGINAIS (MANTIDAS) ---
+        function atualizarPreco() {
+            const saborSelect = document.getElementById('sabor');
+            const tamanhoSelect = document.getElementById('tamanho');
+            const precoBase = parseFloat(saborSelect.options[saborSelect.selectedIndex].getAttribute('data-preco')) || 0;
+            const multiplicador = parseFloat(tamanhoSelect.options[tamanhoSelect.selectedIndex].getAttribute('data-multiplicador')) || 1;
+            const total = precoBase * multiplicador;
+            document.getElementById('preco-total').innerText = `R$ ${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        function enviarPedido() {
+            const sabor = document.getElementById('sabor').value;
+            const tamanho = document.getElementById('tamanho').value;
+            const preco = document.getElementById('preco-total').innerText;
+            const data = document.getElementById('data-entrega').value;
+            const obs = document.getElementById('obs').value;
+            const fone = "5521999999999";
+            const texto = `Olá! Gostaria de encomendar um bolo:\n\n🎂 *Sabor:* ${sabor}\n📏 *Tamanho:* ${tamanho}\n💰 *Valor:* ${preco}\n📅 *Data:* ${data}\n📝 *Obs:* ${obs}`;
+            window.open(`https://wa.me/${fone}?text=${encodeURIComponent(texto)}`);
+        }
+
+        // Fecha se clicar fora da imagem
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('modal-bolo')) { fecharModal(); }
+        }
+    </script>
+
+
+</body>
+
+</html>
